@@ -54,7 +54,8 @@ module Merit
         notify_observers(
           description: I18n.t("merit.removed_badge", badge_name: badge.name),
           removed: true,
-          sash_id: badge_sash.sash_id
+          merit_object: badge_sash,
+          sash_id: sash.id
         )
       end
     end
